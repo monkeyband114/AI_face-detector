@@ -17,7 +17,15 @@ while True:
          cv2.rectangle(frame, (x, y), (x+w, y+h), (225, 225,0), 2)
     
     cv2.imshow('i be dead', frame)
-    cv2.waitKey(1)
+    end = cv2.waitKey(1)
+    
+    
+    if end == 81 or end == 113:
+        break
+    
+webcam.release()
+    
+    
 
 # gray_man = cv2.cvtColor(webcam, cv2.COLOR_BGR2GRAY)
 
