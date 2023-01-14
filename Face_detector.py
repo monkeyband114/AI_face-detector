@@ -3,7 +3,7 @@ import cv2
 facetrain = cv2.CascadeClassifier('frintalface.xml')
 
 # amg = cv2.imread('wera.jpg')
-webcam = cv2.VideoCapture(0)
+webcam = cv2.VideoCapture('Azure Bot Service.mp4')
 
 while True:
     
